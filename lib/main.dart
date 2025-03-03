@@ -12,7 +12,10 @@ class Znotes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Poppins', brightness: Brightness.dark),
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.black,
+          fontFamily: 'Poppins',
+          brightness: Brightness.dark),
       home: const NotesView(),
     );
   }
