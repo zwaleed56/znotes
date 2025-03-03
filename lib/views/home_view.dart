@@ -40,13 +40,20 @@ class NotesView extends StatelessWidget {
           child: const Icon(Icons.add, size: 50),
           onPressed: () {
             showModalBottomSheet(
+                isScrollControlled: true,
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(32),
                         topRight: Radius.circular(32))),
                 context: context,
                 builder: (context) {
-                  return const ShowModalBottomSheetBody();
+                  return SingleChildScrollView(
+                      padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context)
+                              .viewInsets
+                              .bottom // Adjusts for the keyboard
+                          ),
+                      child: const ShowModalBottomSheetBody());
                 });
           },
         ),
