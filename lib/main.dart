@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:znotes/constants.dart';
 
 import 'package:znotes/views/home_view.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  Hive.openBox(kNoteBox);
   runApp(const Znotes());
 }
 
