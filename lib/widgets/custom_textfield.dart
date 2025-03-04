@@ -18,7 +18,7 @@ class CustomTextField extends StatelessWidget {
       autofocus: true,
       validator: validator,
       onSaved: onSaved,
-      maxLines: 1,
+      maxLines: maxLines,
       decoration: InputDecoration(
           fillColor: Colors.grey.withOpacity(.15),
           filled: true,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:znotes/constants.dart';
-import 'package:znotes/models/note_model.dart';
 
 import 'package:znotes/views/home_view.dart';
 
