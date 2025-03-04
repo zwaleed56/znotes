@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:znotes/widgets/custom_iconbutton.dart';
 import 'package:znotes/widgets/custom_alertdialog.dart';
 import 'package:znotes/widgets/home_view_body.dart';
-import 'package:znotes/widgets/showmodalbottomsheet_body.dart';
+import 'package:znotes/widgets/add_note_bottom_sheet_body.dart';
 
 bool isSearch = false;
 
